@@ -77,7 +77,7 @@ describe("Web SessionDescriptionHandler", () => {
   it("adds default ice gathering timeout", () => {
     // no value
     expect(handler.addDefaultIceCheckingTimeout({})).toEqual({
-      iceCheckingTimeout: 5000
+      iceCheckingTimeout: 500
     });
 
     // 0 value to disable the timeout

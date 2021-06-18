@@ -412,7 +412,7 @@ export class SessionDescriptionHandler extends EventEmitter implements SessionDe
 
   private addDefaultIceCheckingTimeout(peerConnectionOptions: any): any {
     if (peerConnectionOptions.iceCheckingTimeout === undefined) {
-      peerConnectionOptions.iceCheckingTimeout = 5000;
+      peerConnectionOptions.iceCheckingTimeout = 500;
     }
     return peerConnectionOptions;
   }
