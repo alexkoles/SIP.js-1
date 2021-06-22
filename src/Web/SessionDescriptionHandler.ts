@@ -556,7 +556,7 @@ export class SessionDescriptionHandler extends EventEmitter implements SessionDe
         if (!this.iceGatheringTimer && options.iceCheckingTimeout) {
           this.iceGatheringTimeout = false;
           this.iceGatheringTimer = setTimeout(() => {
-            this.logger.log("RTCIceChecking Timeout Triggered after " + options.iceCheckingTimeout + " milliseconds");
+            this.logger.log("RTCIceChecking Timeout Triggered after HERE4 " + options.iceCheckingTimeout + " milliseconds");
             this.iceGatheringTimeout = true;
             this.triggerIceGatheringComplete();
           }, options.iceCheckingTimeout);
