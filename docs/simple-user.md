@@ -123,7 +123,7 @@ async function main(): Promise<void> {
   await simpleUser.call(destination);
 
   // Wait some number of milliseconds
-  await wait(5000);
+  await wait(500);
 
   // Hangup call
   await simpleUser.hangup();
