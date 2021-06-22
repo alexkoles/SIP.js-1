@@ -6139,8 +6139,8 @@ var SignalingState;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var T1 = 500;
-var T2 = 4000;
-var T4 = 5000;
+var T2 = 3000;
+var T4 = 4000;
 /**
  * Timers.
  * @public

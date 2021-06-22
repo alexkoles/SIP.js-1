@@ -6139,8 +6139,8 @@ var SignalingState;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var T1 = 500;
-var T2 = 4000;
-var T4 = 5000;
+var T2 = 3000;
+var T4 = 4000;
 /**
  * Timers.
  * @public
@@ -19009,7 +19009,7 @@ var SessionDescriptionHandler = /** @class */ (function (_super) {
     };
     SessionDescriptionHandler.prototype.addDefaultIceCheckingTimeout = function (peerConnectionOptions) {
         if (peerConnectionOptions.iceCheckingTimeout === undefined) {
-            peerConnectionOptions.iceCheckingTimeout = 5000;
+            peerConnectionOptions.iceCheckingTimeout = 500;
         }
         return peerConnectionOptions;
     };
