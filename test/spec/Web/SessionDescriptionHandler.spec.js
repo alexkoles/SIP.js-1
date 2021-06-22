@@ -48,7 +48,7 @@ describe('Web/SessionDescriptionHandler', function() {
 
     handler = new SessionDescriptionHandler(console, SessionDescriptionHandlerObserver, {
       peerConnectionOptions: {
-        iceCheckingTimeout: 500
+        iceCheckingTimeout: 300
       }
     });
   });
@@ -71,7 +71,7 @@ describe('Web/SessionDescriptionHandler', function() {
   it('adds default ice gathering timeout', function() {
     // no value
     expect(handler.addDefaultIceCheckingTimeout({})).toEqual({
-      iceCheckingTimeout: 500
+      iceCheckingTimeout: 300
     });
 
     // 0 value to disable the timeout
