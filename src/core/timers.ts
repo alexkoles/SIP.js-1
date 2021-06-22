@@ -1,6 +1,6 @@
 const T1: number = 500;
-const T2: number = 400;
-const T4: number = 500;
+const T2: number = 3000;
+const T4: number = 4000;
 
 /**
  * Timers.
